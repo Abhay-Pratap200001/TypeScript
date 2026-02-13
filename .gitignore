@@ -1,0 +1,43 @@
+# Dependencies
+node_modules/
+
+# Compilation Artifacts
+# Compiled JavaScript files and source maps are typically generated in a build directory
+# and should not be committed to source control. The default output directory is often 'dist' or 'build'.
+# Adjust these paths as necessary to match your project's tsconfig.json 'outDir'.
+/dist
+/build
+*.js.map
+*.d.ts.map
+
+# If you are compiling TypeScript files to the same directory as your source
+# files, use a more specific pattern to ignore *only* the generated files,
+# while still tracking the source files.
+# Example: ignore all .js files, but do *not* ignore .js files that start with an underscore (if you have any manual js files)
+# *.js
+# !_*js
+
+# Logs and temporary files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+.grunt
+
+# Environment variables
+.env
+.env.*
+!.env.example # Track an example file to show which variables are needed
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# IDE and OS files
+# VS Code
+.vscode/
+# macOS
+.DS_Store
+# Windows
+Thumbs.db
