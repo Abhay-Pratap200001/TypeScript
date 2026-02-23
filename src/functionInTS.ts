@@ -22,5 +22,5 @@ function logChai():void {
 
 
 function orderchai(type: string = "Masala") {
-    
+    return  `chai `
 }
